@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 ![Made for Claude Code](https://img.shields.io/badge/made%20for-Claude%20Code-6b4fbb)
 
-**Claude Code Starter Kit is a free, MIT-licensed set of ready-to-use configuration files for [Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — four slash commands (`/commit`, `/review`, `/test`, `/explain`), a `code-reviewer` subagent, and an auto-format hook. Copy them into a `.claude/` folder, restart Claude Code, and you have a power-user setup in minutes. No setup, no dependencies to wire up — just files.
+**Claude Code Starter Kit is a free, MIT-licensed set of ready-to-use configuration files for [Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — four slash commands (`/commit`, `/review`, `/test`, `/explain`), a `code-reviewer` subagent, and an auto-format hook. Copy them into a `.claude/` folder, restart Claude Code, and you have a power-user Claude Code setup in minutes. No setup, no dependencies to wire up — just files.
 
 > **Unofficial, community-made. Not affiliated with or endorsed by Anthropic.**
 > "Claude" and "Claude Code" are trademarks of Anthropic.
@@ -83,6 +83,13 @@ No. It's an independent, community-made kit for Claude Code, released under the 
 
 **What's the difference between this and the Power Pack?**
 This free starter kit has 4 commands, 1 subagent, and 1 hook. The paid Claude Code Power Pack adds 8 more commands, 5 more subagents, 4 more hooks, a git-aware status line, and a full commented CLAUDE.md template — see below.
+
+## Learn more
+
+Two articles walk through this kit in depth:
+
+- **[The Claude Code setup I install in every repo: slash commands, a review subagent, and hooks](https://dev.to/vincentchabran/the-claude-code-setup-i-install-in-every-repo-slash-commands-a-review-subagent-and-hooks-404j)** — the full tour of this setup and the reasoning behind each file.
+- **[Why Claude Code keeps asking for permission — and how to fix your setup so it stops](https://dev.to/vincentchabran/why-claude-code-keeps-asking-for-permission-and-how-to-fix-your-setup-so-it-stops-3ho8)** — a deep dive into Claude Code permissions, and why commands like `/commit` and `/review` declare `allowed-tools` in their frontmatter.
 
 ## License
 
