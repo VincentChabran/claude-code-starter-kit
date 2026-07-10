@@ -1,0 +1,14 @@
+{
+  "name": "cc-starter-kit-market",
+  "owner": { "name": "Vincent Chabran" },
+  "description": "A small marketplace hosting the Claude Code Starter Kit plugin: ready-to-use slash commands, a code-reviewer subagent, and an auto-format hook.",
+  "plugins": [
+    {
+      "name": "cc-starter-kit",
+      "source": "./",
+      "description": "Slash commands, a review subagent, and an auto-format hook for Claude Code.",
+      "category": "Code Quality & Testing",
+      "license": "MIT"
+    }
+  ]
+}

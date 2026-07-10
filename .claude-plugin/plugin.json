@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "cc-starter-kit",
+  "displayName": "Claude Code Starter Kit",
+  "version": "1.0.0",
+  "description": "Ready-to-use slash commands (/commit /review /test /explain), a code-reviewer subagent, and an auto-format hook for Claude Code. Unofficial, community-made.",
+  "author": {
+    "name": "Vincent Chabran"
+  },
+  "homepage": "https://github.com/VincentChabran/claude-code-starter-kit",
+  "repository": "https://github.com/VincentChabran/claude-code-starter-kit",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "slash-commands",
+    "code-review",
+    "git-commit",
+    "hooks",
+    "subagent",
+    "developer-productivity"
+  ],
+  "commands": "./.claude/commands/",
+  "agents": "./.claude/agents/",
+  "hooks": "./hooks/hooks.json"
+}

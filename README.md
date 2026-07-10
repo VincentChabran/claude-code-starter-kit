@@ -47,6 +47,21 @@ Then restart Claude Code, type `/`, and you'll see the new commands. Fill in `CL
 
 Merge the `hooks` block from `.claude/settings.example.json` into your `~/.claude/settings.json` (all projects) or `.claude/settings.json` (this project). It runs your formatter — `prettier`, `black`, `gofmt`, or `rustfmt` — on each file right after Claude edits it, and quietly does nothing if that formatter isn't installed. Reading the hook payload uses [`jq`](https://jqlang.github.io/jq/) (`brew install jq` / `sudo apt install jq`).
 
+## Install as a plugin
+
+Prefer not to copy files by hand? Install the whole kit as a Claude Code plugin. From inside Claude Code:
+
+```
+/plugin marketplace add VincentChabran/claude-code-starter-kit
+/plugin install cc-starter-kit@cc-starter-kit-market
+```
+
+Restart Claude Code and you'll have the four commands, the `code-reviewer` subagent, and the auto-format hook — same files as above, wired up for you. Update later with `/plugin marketplace update cc-starter-kit-market`, and remove it any time with `/plugin uninstall cc-starter-kit`.
+
+The commands are read straight from `.claude/commands/`, the hook from `hooks/hooks.json`, and the subagent from `agents/code-reviewer.md` (a mirror of `.claude/agents/code-reviewer.md` so both the manual-copy and plugin installs stay in sync).
+
+> **Unofficial, community-made. Not affiliated with or endorsed by Anthropic.** "Claude" and "Claude Code" are trademarks of Anthropic.
+
 ## Example
 
 Make some changes, then let the commands do the busywork:
